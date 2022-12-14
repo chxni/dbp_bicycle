@@ -1,7 +1,7 @@
 ﻿
 namespace dbp_bicycle
 {
-    partial class Form7
+    partial class bic_rent
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace dbp_bicycle
 {
-    partial class Form6
+    partial class sign_up
     {
         /// <summary>
         /// Required designer variable.

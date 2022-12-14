@@ -1,7 +1,7 @@
 ﻿
 namespace dbp_bicycle
 {
-    partial class Form1
+    partial class main
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.

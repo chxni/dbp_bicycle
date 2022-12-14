@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dbp_bicycle
 {
-    public partial class Form6 : Form
+    public partial class sign_up : Form
     {
-        public Form6()
+        public sign_up()
         {
             InitializeComponent();
         }

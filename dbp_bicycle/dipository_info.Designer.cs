@@ -1,7 +1,7 @@
 ﻿
 namespace dbp_bicycle
 {
-    partial class Form5
+    partial class dipository_info
     {
         /// <summary>
         /// Required designer variable.

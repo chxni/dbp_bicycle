@@ -34,8 +34,6 @@ namespace dbp_bicycle
                 
                 DBAdapter.SelectCommand.Parameters.Add("bicno", OracleDbType.Varchar2, 20);
                 DBAdapter.SelectCommand.Parameters["bicno"].Value = textBox1.Text.Trim();
-
-                //DBAdapter.Fill(DS, "RelTable"); //
                 
             }
             else if (comboBox1.SelectedIndex == 1)
@@ -43,16 +41,12 @@ namespace dbp_bicycle
                 DBAdapter.SelectCommand = new OracleCommand("select B.bicno, B.status, D.area from bicycle B, depository D where B.depno = D.depno and status =:status", conn);
                 DBAdapter.SelectCommand.Parameters.Add("status", OracleDbType.Varchar2, 20);
                 DBAdapter.SelectCommand.Parameters["status"].Value = textBox1.Text.Trim();
-
-                //DBAdapter.Fill(DS, "RelTable"); //
             }
             else if (comboBox1.SelectedIndex == 2)
             {
                 DBAdapter.SelectCommand = new OracleCommand("select B.bicno, B.status, D.area from bicycle B, depository D where B.depno = D.depno and area =:status ", conn);
                 DBAdapter.SelectCommand.Parameters.Add("status", OracleDbType.Varchar2, 20);
                 DBAdapter.SelectCommand.Parameters["status"].Value = textBox1.Text.Trim();
-
-                //DBAdapter.Fill(DS, "RelTable"); //
             }
             else
             {

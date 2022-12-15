@@ -34,15 +34,17 @@ namespace dbp_bicycle
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.memno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.birth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.gender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -51,8 +53,7 @@ namespace dbp_bicycle
             this.comboBox1.Items.AddRange(new object[] {
             "회원번호",
             "이름"});
-            this.comboBox1.Location = new System.Drawing.Point(130, 38);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(97, 54);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(82, 23);
             this.comboBox1.TabIndex = 7;
@@ -72,12 +73,12 @@ namespace dbp_bicycle
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(11, 286);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Location = new System.Drawing.Point(12, 336);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(408, 172);
+            this.listView1.Size = new System.Drawing.Size(449, 183);
             this.listView1.TabIndex = 16;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -92,12 +93,16 @@ namespace dbp_bicycle
             this.columnHeader2.Text = "자전거 번호";
             this.columnHeader2.Width = 175;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "연체여부";
+            this.columnHeader3.Width = 85;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(8, 252);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(12, 299);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 17);
             this.label8.TabIndex = 17;
@@ -105,49 +110,21 @@ namespace dbp_bicycle
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(228, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(205, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(108, 25);
             this.textBox1.TabIndex = 18;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(350, 36);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(345, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 23);
             this.button1.TabIndex = 19;
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.name,
-            this.memno,
-            this.birth,
-            this.gender,
-            this.phone});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(10, 97);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(412, 140);
-            this.listView2.TabIndex = 20;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // name
-            // 
-            this.name.Text = "이름";
-            // 
-            // memno
-            // 
-            this.memno.Text = "회원번호";
-            this.memno.Width = 77;
-            // 
-            // birth
+            // Form4
             // 
             this.birth.Text = "생년월일";
             this.birth.Width = 78;
@@ -166,16 +143,14 @@ namespace dbp_bicycle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 493);
-            this.Controls.Add(this.listView2);
+            this.ClientSize = new System.Drawing.Size(473, 531);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "user_info";
+            this.Name = "Form4";
             this.Text = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -192,11 +167,5 @@ namespace dbp_bicycle
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ColumnHeader name;
-        private System.Windows.Forms.ColumnHeader memno;
-        private System.Windows.Forms.ColumnHeader birth;
-        private System.Windows.Forms.ColumnHeader gender;
-        private System.Windows.Forms.ColumnHeader phone;
     }
 }

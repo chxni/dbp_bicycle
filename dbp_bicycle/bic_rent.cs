@@ -32,7 +32,7 @@ namespace dbp_bicycle
             }
         }
         private int INSERTRow() //사용자 함수 정의
-            {
+        {
             odpConn.ConnectionString = "User Id=chani; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = xe) ) );";
             odpConn.Open();
             string strqry = "INSERT INTO rental VALUES (:memno, :bicno, :depnp, :rentaldate)";
@@ -45,7 +45,6 @@ namespace dbp_bicycle
             OraCmd.Parameters.Add("depno", OracleDbType.Int32).Value = textBox3.Text.Trim();
             OraCmd.Parameters.Add("rentaldate", OracleDbType.Varchar2, 40).Value = nowdate;
             return OraCmd.ExecuteNonQuery(); //추가되는 행수 반환
-            }
         }
     }
-
+}

@@ -34,7 +34,6 @@ namespace dbp_bicycle
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
@@ -74,7 +73,6 @@ namespace dbp_bicycle
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
             this.listView1.HideSelection = false;
@@ -90,19 +88,14 @@ namespace dbp_bicycle
             this.columnHeader1.Text = "자전거 번호";
             this.columnHeader1.Width = 129;
             // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "구입 날짜";
-            this.columnHeader2.Width = 204;
-            // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "보관소 정보";
+            this.columnHeader3.Text = "자전거 상태";
             this.columnHeader3.Width = 188;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "자전거 상태";
+            this.columnHeader4.Text = "보관소 정보";
             this.columnHeader4.Width = 159;
             // 
             // button1
@@ -113,8 +106,9 @@ namespace dbp_bicycle
             this.button1.TabIndex = 8;
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form3
+            // bic_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +118,7 @@ namespace dbp_bicycle
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listView1);
-            this.Name = "Form3";
+            this.Name = "bic_management";
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,7 +132,6 @@ namespace dbp_bicycle
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button button1;

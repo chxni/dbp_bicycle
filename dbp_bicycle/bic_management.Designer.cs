@@ -60,10 +60,8 @@ namespace dbp_bicycle
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "자전거 번호",
-            "대여회원정보",
-            "대여시각",
-            "반납시각",
-            "반납위치"});
+            "자전거 상태",
+            "보관소 정보"});
             this.comboBox1.Location = new System.Drawing.Point(371, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);

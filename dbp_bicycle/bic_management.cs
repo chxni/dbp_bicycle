@@ -31,10 +31,10 @@ namespace dbp_bicycle
             if (comboBox1.SelectedIndex == 0)
             {
                 DBAdapter.SelectCommand = new OracleCommand("select B.bicno, B.status, D.area from bicycle B, depository D where B.depno = D.depno and bicno =:bicno", conn);
-                
+
                 DBAdapter.SelectCommand.Parameters.Add("bicno", OracleDbType.Varchar2, 20);
                 DBAdapter.SelectCommand.Parameters["bicno"].Value = textBox1.Text.Trim();
-                
+
             }
             else if (comboBox1.SelectedIndex == 1)
             {

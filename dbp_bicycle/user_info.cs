@@ -80,7 +80,7 @@ namespace dbp_bicycle
             }
             else
             {
-                DBAdapter.SelectCommand = new OracleCommand("select * from member", myConnection);
+                DBAdapter.SelectCommand = new OracleCommand("select R.rentaldate, R.bicno, D.area from rental R, member M, depository D where R.memno = M.memno and R.depno = D.depno and M.name =:name", myConnection);
             }
             DBAdapter.Fill(DS, "rental");
             DataTable RelTable = DS.Tables["rental"];

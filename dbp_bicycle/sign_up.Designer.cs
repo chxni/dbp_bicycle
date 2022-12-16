@@ -33,21 +33,22 @@ namespace dbp_bicycle
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtbirth = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtgender = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(219, 352);
+            this.button1.Location = new System.Drawing.Point(175, 293);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 40);
+            this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "회원가입";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,119 +58,121 @@ namespace dbp_bicycle
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(211, 32);
+            this.label1.Location = new System.Drawing.Point(169, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 22);
+            this.label1.Size = new System.Drawing.Size(89, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "회원가입";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 134);
+            this.label2.Location = new System.Drawing.Point(35, 112);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "이름";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 134);
+            this.label3.Location = new System.Drawing.Point(232, 112);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "회원번호";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 28);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtname.Location = new System.Drawing.Point(104, 109);
+            this.txtname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(81, 25);
+            this.txtname.TabIndex = 5;
             // 
-            // textBox2
+            // txtid
             // 
-            this.textBox2.Location = new System.Drawing.Point(376, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 28);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtid.Location = new System.Drawing.Point(301, 109);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(81, 25);
+            this.txtid.TabIndex = 6;
             // 
-            // textBox3
+            // txtbirth
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 201);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 28);
-            this.textBox3.TabIndex = 10;
+            this.txtbirth.Location = new System.Drawing.Point(104, 167);
+            this.txtbirth.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbirth.Name = "txtbirth";
+            this.txtbirth.Size = new System.Drawing.Size(81, 25);
+            this.txtbirth.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 204);
+            this.label4.Location = new System.Drawing.Point(35, 170);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 18);
+            this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "생년월일";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(290, 206);
+            this.label5.Location = new System.Drawing.Point(232, 172);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 18);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 7;
             this.label5.Text = "성별";
             // 
-            // textBox4
+            // txtphone
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 278);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(346, 28);
-            this.textBox4.TabIndex = 14;
+            this.txtphone.Location = new System.Drawing.Point(104, 232);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(2);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(278, 25);
+            this.txtphone.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 281);
+            this.label6.Location = new System.Drawing.Point(35, 234);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 12;
             this.label6.Text = "전화번호";
             // 
-            // comboBox1
+            // txtgender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "남성",
-            "여성"});
-            this.comboBox1.Location = new System.Drawing.Point(376, 204);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 26);
-            this.comboBox1.TabIndex = 15;
+            this.txtgender.Location = new System.Drawing.Point(301, 170);
+            this.txtgender.Name = "txtgender";
+            this.txtgender.Size = new System.Drawing.Size(81, 25);
+            this.txtgender.TabIndex = 15;
             // 
-            // Form6
+            // sign_up
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 440);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(447, 367);
+            this.Controls.Add(this.txtgender);
+            this.Controls.Add(this.txtphone);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtbirth);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form6";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "sign_up";
             this.Text = "Form6";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,13 +185,13 @@ namespace dbp_bicycle
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtbirth;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtgender;
     }
 }

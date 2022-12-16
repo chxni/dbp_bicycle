@@ -78,10 +78,11 @@ namespace dbp_bicycle
                 DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
                 DBAdapter.SelectCommand.Parameters["name"].Value = textBox1.Text.Trim();
             }
-            else
+            else if (comboBox1.SelectedIndex == 2)
             {
                 DBAdapter.SelectCommand = new OracleCommand("select * from member", myConnection);
             }
+
             DBAdapter.Fill(DS, "rental");
             DataTable RelTable = DS.Tables["rental"];
             DataRowCollection rows = RelTable.Rows;
@@ -93,7 +94,6 @@ namespace dbp_bicycle
                     item.SubItems.Add(dr[i].ToString());
                 }
                 listView1.Items.Add(item);
-
             }
         }
     }
